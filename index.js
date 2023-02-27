@@ -1,52 +1,50 @@
 const readline = require("readline-sync")
 
-// console.log("=======================");
-// console.log("      Ejercicio 1      ");
-// console.log("=======================");
+console.log("=======================");
+console.log("      Ejercicio 1      ");
+console.log("=======================");
 
-// const word = readline.question("write a word: ")
+const word = readline.question("write a word: ")
 
-// for (let i = 0; i < 10; i++) {
-//     console.log(word);
-// }
+for (let i = 0; i < 10; i++) {
+    console.log(word);
+}
 
-// console.log("");
-// console.log("=======================");
-// console.log("      Ejercicio 2      ");
-// console.log("=======================");
+console.log("");
+console.log("=======================");
+console.log("      Ejercicio 2      ");
+console.log("=======================");
 
-// const age = readline.question("Age? (only numeric value): ")
+const age = readline.question("Age? (only numeric value): ")
 
-// if (!isNaN(age)) {
-//     for (let i = 1; i <= age; i++) {
-//         console.log(i);
-//     }
-// } else {
-//     console.log("The value isn't numeric");
-// }
+if (!isNaN(age)) {
+    for (let i = 1; i <= age; i++) {
+        console.log(i);
+    }
+} else {
+    console.log("The value isn't numeric");
+}
 
+console.log("");
+console.log("=======================");
+console.log("      Ejercicio 3      ");
+console.log("=======================");
 
+const integer = readline.question("Positive integer: ")
 
-// console.log("");
-// console.log("=======================");
-// console.log("      Ejercicio 3      ");
-// console.log("=======================");
+let numbers = [];
 
-// const integer = readline.question("Positive integer: ")
-
-// let numbers = [];
-
-// if (integer > 0 && !isNaN(integer)) {
-//     for (let i = 1; i <= integer; i++) {
-//         let resto = i % 2;
-//         if (resto != 0) {
-//             numbers.push(i)
-//         }
-//     }
-//     console.log(numbers);
-// } else {
-//     console.log('The input is negative, 0 or not a numeric value');
-// }
+if (integer > 0 && !isNaN(integer)) {
+    for (let i = 1; i <= integer; i++) {
+        let resto = i % 2;
+        if (resto != 0) {
+            numbers.push(i)
+        }
+    }
+    console.log(numbers);
+} else {
+    console.log('The input is negative, 0 or not a numeric value');
+}
 
 console.log("");
 console.log("=======================");
@@ -62,3 +60,16 @@ if (secondInteger > 0 && !isNaN(secondInteger)) {
 } else {
     console.log('The input is negative, 0 or not a numeric value');
 }
+
+console.log("");
+console.log("=======================");
+console.log("      Ejercicio 5      ");
+console.log("=======================");
+
+const word5 = readline.question("Write a word: ")
+const reversed = word5.split('').reverse();
+
+for (let i = 0; i < reversed.length; i++) {
+    console.log(reversed[i]);
+}
+
